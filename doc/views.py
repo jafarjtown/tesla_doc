@@ -9,6 +9,8 @@ from doc.models import Post
 from faker import Faker
 fake = Faker(['it_IT', 'en_US', 'ja_JP'])
 # your views
+
+
 class TestDetaitlView(DetailView):
     model = User
     template = 'doc/index.html'
@@ -23,20 +25,16 @@ class TestRetriveAllView(RetriveAllView):
     pagination = True
     pagination_count = 10
 
-class HomePage(View):
-    
-    def get(self, request, *args, **kwargs):
-        all = Post.all()
-        for p in all:
-            print(p.user.email)
-        return Render(request, 'doc/index.html') 
-    
-    def post(self, request, *args, **kwargs):
-        return Render(request, 'doc/docs-page.html')             
 
-# def index(request):
-#     return Render(request, 'doc/index.html')                  
+class HomePage(View):
+
+    def get(self, request, *args, **kwargs):
+        print(request.user.email)
+        return Render(request, 'doc/index.html')
+
+    def post(self, request, *args, **kwargs):
+        return Render(request, 'doc/docs-page.html')
 
 
 def documentation(request):
-    return Render(request, 'doc/docs-page.html')                  
+    return Render(request, 'doc/docs-page.html')

@@ -12,4 +12,8 @@ class Post(Model):
     user = ForeignKey(User)
     body = TextField()
     comments = ManyToManyField(User)
+    
+    
+    def __meta__(self):
+        return ('id', 'user', 'comments')
 
