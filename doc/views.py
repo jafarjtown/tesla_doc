@@ -6,8 +6,8 @@ from tesla.pyhtml import CT
 from tesla.views import View, DetailView, RetriveAllView
 from tesla.admin.models import User
 from doc.models import Post
-from faker import Faker
-fake = Faker(['it_IT', 'en_US', 'ja_JP'])
+# from faker import Faker
+# fake = Faker(['it_IT', 'en_US', 'ja_JP'])
 # your views
 
 
@@ -29,7 +29,7 @@ class TestRetriveAllView(RetriveAllView):
 class HomePage(View):
 
     def get(self, request, *args, **kwargs):
-        print(request.user.email)
+        # print(request.user.email)
         return Render(request, 'doc/index.html')
 
     def post(self, request, *args, **kwargs):
