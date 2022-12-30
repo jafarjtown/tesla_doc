@@ -19,12 +19,14 @@
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Installation</a></li>
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Creating a Project</a></li>
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Creating an Application</a></li>
-				<li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Starting the development server</a></li>
-				
+				<li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Starting the development server</a>
+				</li>
+
 				<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
-							class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Folder Structure</a></li>
+							class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Folder Structure</a>
+				</li>
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Project folder structure
-				</a></li>
+					</a></li>
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Application folder structure</a></li>
 				<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Database folder structure</a></li>
 				<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
@@ -122,18 +124,17 @@ if __name__ == '__main__.py':
 				<section class="docs-section" id="item-1-1">
 					<h2 class="section-heading">Installation</h2>
 					<p>to install Tesla web make sure you have Python installed </p>
-					<p>run the command on your terminal: <code>pip install tesla-web</code></
-				</section>
-				<!--//section-->
+					<p>run the command on your terminal: <code>pip install tesla-web</code></ </section>
+							<!--//section--> <section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Creating a Project</h2>
+						<p>A project in Tesla web is like the main Application, it consists all the available route and
+							project configuration </p>
+						<h5 class="mt-5">Starting a new Project:</h5>
 
-				<section class="docs-section" id="item-1-2">
-					<h2 class="section-heading">Creating a Project</h2>
-					<p>A project in Tesla web is like the main Application, it consists all the available route and project configuration </p>
-					<h5 class="mt-5">Starting a new Project:</h5>
+						<p>open your terminal and go to the location you Want the project to be created and run the
+							following command</p>
 
-					<p>open your terminal and go to the location you Want the project to be created and run the following command</p>
-					
-					<pre class="bg-dark arounded p-1">
+						<pre class="bg-dark arounded p-1">
 <code>tesla startproject</code>
 						<code class="bg-dark text-light">
 
@@ -145,7 +146,7 @@ if __name__ == '__main__.py':
 
 project name:|
 					</code></pre>
-					<p>it will prompt asking you to enter project name </p>
+						<p>it will prompt asking you to enter project name </p>
 				</section>
 				<!--//section-->
 
@@ -154,8 +155,9 @@ project name:|
 					<p>Application in Tesla web is like a component or python module that define views and urls</p>
 					<h5 class="mt-5">Starting a new Project:</h5>
 
-					<p>open your terminal and go to the location you Want the project to be created and run the following command</p>
-					
+					<p>open your terminal and go to the location you Want the project to be created and run the
+						following command</p>
+
 					<pre class="bg-dark arounded p-1">
 <code>tesla startapp</code>
 						<code class="bg-dark text-light">
@@ -177,8 +179,9 @@ application name:|
 					<p></p>
 					<h5 class="mt-5">Starting a new Project:</h5>
 
-					<p>open your terminal and go to the location you Want the project to be created and run the following command</p>
-					<p>running the command without adding the port  by default it will be serve on port 8000</p>
+					<p>open your terminal and go to the location you Want the project to be created and run the
+						following command</p>
+					<p>running the command without adding the port by default it will be serve on port 8000</p>
 					<pre class="bg-dark arounded p-1">
 <code>tesla serve [PORT]</code>
 						<code class="bg-dark text-light">
@@ -193,17 +196,17 @@ Starting the developing server
 INFO:waitress:Serving on http://[::]:8000
 INFO:waitress:Serving on http://0.0.0.0:8000
 					</code></pre>
-					<p>open  url address it shows here on your browser  </p>
+					<p>open url address it shows here on your browser </p>
 				</section>
 				<!--//section-->
-	
+
 
 			</article>
 
 			<article class="docs-article" id="section-2">
 				<header class="docs-header">
 					<h1 class="docs-heading">Folder Structure</h1>
-					
+
 					<!--//docs-intro-->
 				</header>
 				<section class="docs-section" id="item-2-1">
@@ -230,7 +233,8 @@ INFO:waitress:Serving on http://0.0.0.0:8000
    - urls.py
    - views.py
    - ... others files follow
-</code></pre></section>
+</code></pre>
+				</section>
 				<!--//section-->
 
 				<section class="docs-section" id="item-2-3">
@@ -253,7 +257,8 @@ INFO:waitress:Serving on http://0.0.0.0:8000
      - ghc5dde5j.json
      ...
    ...
-</code></pre></section>
+</code></pre>
+				</section>
 				<!--//section-->
 			</article>
 			<!--//docs-article-->
@@ -437,87 +442,55 @@ INFO:waitress:Serving on http://0.0.0.0:8000
 				<header class="docs-header">
 					<h1 class="docs-heading">Example</h1>
 					<section class="docs-intro">
-						<p>in this section we are creating a simple todo application <br>to start, let's cross our fingers... just joking. </p>
+						<p>in this section we are creating a simple todo application <br>to start, let's cross our
+							fingers... just joking. </p>
 						<p>
 							run this on terminal inside the folder we want our project to stay<br>
 							<code>tesla startproject</code>
-							<br> I  will name mine todo_project
+							<br> I will name mine todo_project
 						</p>
-						<p>open the project with your best editor, am using notepad ... <br>let's test our project if it's okay</p>
-						<p>make sure you open the project folder in your terminal and start the development server <br><code>tesla serve</code></p>
-						<p>if you saw 404 page not found, congratulations... its up,  control-C to cancel the server</p>
-						<p>now lets create application that will serve our todos <br><code>tesla startapp</code> i will name mine app</p>
-						<p>check your project folder if you saw a folder with the name you provided with some files inside, congratulations</p>
+						<p>open the project with your best editor, am using notepad ... <br>let's test our project if
+							it's okay</p>
+						<p>make sure you open the project folder in your terminal and start the development server
+							<br><code>tesla serve</code></p>
+						<p>if you saw 404 page not found, congratulations... its up, control-C to cancel the server</p>
+						<p>now lets create application that will serve our todos <br><code>tesla startapp</code> i will
+							name mine app</p>
+						<p>check your project folder if you saw a folder with the name you provided with some files
+							inside, congratulations</p>
 						<p>lets connect the two... <br>
-						this is how i will do mine, <b>Note: app is the name of application i just created</b>
+							this is how i will do mine, <b>Note: app is the name of application i just created</b>
 						</p>
-						<pre class="bg-dark text-light"><code class="bg-dark text-light">
-
-from tesla.router.url import Mount
-
-from tesla.admin.urls import patterns as admin_urls
-from app.urls import patterns
-
-Mount('/', patterns, app_name='app')
-Mount('admin/', admin_urls, app_name='admin')
-							
-						</code></pre>
-                         <p>
-							change your <b>project/core/urls.py</b> to above 
-						 </p> 
-						 <pre class="bg-dark text-light"><code class="bg-dark text-light">
-
-from tesla import TeslaApp
-
-from tesla.admin import abs_path
-import os
-from pathlib import Path as Pa
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Pa(__file__).resolve().parent.parent 
-
-
-TeslaApp.templates_folders = [
-	os.path.join(abs_path, 'template'),
-	os.path.join(BASE_DIR, 'templates')
-	]
-						</code></pre>
-													 <p>
-														change your <b>project/core/settings.py</b> to above 
-													 </p>
-						 <p>
-							lets create our first view  
-						 </p>
-						 <pre class="bg-dark text-light"><code class="bg-dark text-light">
-from tesla.response import Render
-
-def home(request):
-	return Render(request, 'index.html')</code></pre>
-	<p>
-		change your <b>project/app/views.py</b> to above 
-	 </p>
-	 <p>
-		create <b>project/templates/index.html</b> <br>
-		<pre class="bg-dark">
-			<code class="text-light bg-dark">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;body&gt;
-&lt;ul&gt;
-	{% for todo in todos %}
-	&lt;li&gt;{{ todo }}&lt;/li&gt;
-	{% endfor %}
-&lt;/ul&gt;
-&lt;form method="post"&gt;
-	&lt;input type="text" value="{{ csrf }}" name="csrfmiddleware" hidden&gt;
-	&lt;input type="text" name="todo" placeholder="write here"&gt;
-	&lt;button&gt;save&lt;/button&gt;
-&lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-			</code>
-		</pre>
-	 </p>
+						<img class="code-sample" src="{{ static_url('pics/core_urls.png') }}" alt="" loading="lazy">
+						<p>
+							change your <b>project/core/urls.py</b> to above
+						</p>
+						<hr>
+						<img class="code-sample" src="{{ static_url('pics/core_se.png') }}" alt="" loading="lazy">
+						<hr>
+						<p>
+							change your <b>project/core/settings.py</b> to above
+						</p>
+						<hr>
+						<p>
+							lets create our first view
+						</p>
+						<img class="code-sample" src="{{ static_url('pics/app_view.png') }}" alt="" loading="lazy">
+						<hr>
+						<p>
+							change your <b>project/app/views.py</b> to above
+						</p>
+						<p>
+							create <b>project/templates/index.html</b></p>
+						<img class="code-sample" src="{{ static_url('pics/app_h.png') }}" alt="" loading="lazy">
+						<hr>
+						<p>lets create our Todo model</p>
+						<img class="code-sample" src="{{ static_url('pics/app_model.png') }}" alt="" loading="lazy">
+						<hr>
+						<p>now lets open our terminal and run the server, if everything is okay you should see this</p>
+						<img class="code-sample" src="{{ static_url('pics/br_view.PNG') }}" alt="" loading="lazy">
+						<p>write something and save... boom, <b>congratulations you have create your first Tesla web application</b></p>
+						<hr>
 					</section>
 					<!--//docs-intro-->
 				</header>

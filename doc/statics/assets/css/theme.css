@@ -4626,3 +4626,12 @@ a.text-link:hover {
     --bs-accordion-active-color: #24a560;
     --bs-accordion-active-bg: #eaf8f0
 }
+.code-sample{
+    width: 80%;
+    margin: auto;
+}
+@media (max-width: 576px) {
+    .code-sample{
+        width: 100%;
+    }
+}
