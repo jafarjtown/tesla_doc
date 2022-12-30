@@ -10,7 +10,7 @@ import os
 from pathlib import Path as Pa
 
 from doc.models import Post
-
+import doc.signals
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Pa(__file__).resolve().parent.parent 
 
