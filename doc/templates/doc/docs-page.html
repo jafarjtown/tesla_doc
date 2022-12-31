@@ -489,18 +489,34 @@ INFO:waitress:Serving on http://0.0.0.0:8000
 						<hr>
 						<p>now lets open our terminal and run the server, if everything is okay you should see this</p>
 						<img class="code-sample" src="{{ static_url('pics/br_view.PNG') }}" alt="" loading="lazy">
-						<p>write something and save... boom, <b>congratulations you have create your first Tesla web application</b></p>
+						<p>write something and save... boom, <b>congratulations you have create your first Tesla web application</b> but other people can see our todos... lets secure it by adding authentication</p>
 						<hr>
 					</section>
 					<!--//docs-intro-->
 				</header>
 				<section class="docs-section" id="item-7-1">
-					<h2 class="section-heading">Section Item 7.1</h2>
-					<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-						leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis
-						bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis
-						ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet,
-						commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					<h2 class="section-heading">Auth Example</h2>
+					<p>lets start by updating our <b>app/models.py to this</b></p>
+					<img class="code-sample" src="{{ static_url('pics/app_a_model.png') }}" alt="" loading="lazy">
+					<hr>
+					<p>Okay, after that lets connect our User model with our project  <br>add this your settings.py</p>
+					<img class="code-sample" src="{{ static_url('pics/app_s.png') }}" alt="" loading="lazy">
+					<hr>
+					<p>lets re-write our <b>app/views.py</b> by adding login and register views</p>
+					<img class="code-sample" src="{{ static_url('pics/app_a_view.png') }}" alt="" loading="lazy">
+					<hr>
+					<p>lets make our app know about register and login view</p>
+					<img class="code-sample" src="{{ static_url('pics/app_a_url.png') }}" alt="" loading="lazy">
+					<p>our views are ready now lets write the two html files register and login</p>
+				    <b>register</b><br>
+					<img class="code-sample" src="{{ static_url('pics/app_reg.png') }}" alt="" loading="lazy">
+					<hr>
+					<b>login</b><br>
+					<img class="code-sample" src="{{ static_url('pics/app_log.png') }}" alt="" loading="lazy">
+					<hr>		
+					<p>if everything is okay, when you run the serve you see error when you try to check the home page <br>you try registering new user and login with the credentials then go to the home and try creating new todo... now only can see your todos </p>
+
+					
 				</section>
 				<!--//section-->
 
