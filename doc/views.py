@@ -3,7 +3,7 @@ from tesla.auth.decorators import login_required
 from tesla.auth.views import login
 from tesla.response import HttpResponse, Redirect, Render, JsonResponse
 from tesla.pyhtml import CT
-from tesla.views import View, DetailView, RetriveAllView
+from tesla.views import View, DetailView,  RetrieveAllView
 from tesla.admin.models import User
 from doc.models import Post
 # from faker import Faker
@@ -18,7 +18,7 @@ class TestDetaitlView(DetailView):
     response = JsonResponse
 
 
-class TestRetriveAllView(RetriveAllView):
+class TestRetriveAllView(RetrieveAllView):
     model = User
     template = 'doc/index.html'
     response = JsonResponse

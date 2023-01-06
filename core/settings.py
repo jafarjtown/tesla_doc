@@ -10,6 +10,7 @@ import os
 from pathlib import Path as Pa
 
 from doc.models import Post
+from portfolio.models import Project, Testimonial
 import doc.signals
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Pa(__file__).resolve().parent.parent 
@@ -24,8 +25,8 @@ TeslaApp.templates_folders = [
 ]
 
 
-register_collections(User, Post)
-TeslaApp.registered_models = [User, Post]
+register_collections(User, Post, Project, Testimonial)
+TeslaApp.registered_models = [User, Post, Project, Testimonial]
 MIDDLEWARES = []
 
 # print(abs_path)
